@@ -7,6 +7,8 @@ services:
       context: ./
       dockerfile: Dockerfile
     image: adidas-backend-for-frontend-mcsv:latest
+    volumes:
+      - ./src/main/resources/certs/:/certs/
     ports:
       - "8081:8081"
     environment:
