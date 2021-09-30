@@ -1,0 +1,18 @@
+apiVersion: v1
+kind: Service
+metadata:
+  annotations:
+    service.beta.kubernetes.io/azure-load-balancer-internal: "true"
+  name: "adidas-backend-for-frontend-mcsv"
+  labels:
+    app: "adidas-backend-for-frontend-mcsv"
+
+spec:
+  type: LoadBalancer
+  ports:
+    - port: 8080
+      targetPort: 8080
+      protocol: TCP
+      name: http
+  selector:
+    app: "adidas-backend-for-frontend-mcsv"
