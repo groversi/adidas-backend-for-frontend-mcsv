@@ -34,12 +34,12 @@ For more details, see the swagger documentation. (On the repo is also included a
 #Dependencies
 This project needs other projects do work properly. Please download and run the other projects:
 - adidas-subscription-manager-mcsv - [See project](https://github.com/groversi/adidas-subscription-manager-mcsv)
-- adidas-email-server-mcsv - 
+- adidas-email-server-mcsv - [See project](https://github.com/groversi/adidas-email-server-mcsv)
 
 For more doubts, reade README section of these projects.
 
 # How to run
-- To start application locally, set JVM environment variable and run Docker compose for mongoDb services.
+- To start application locally, set JVM environment variable.
 ```bash
  spring.profiles.active=local 
  ``` 
